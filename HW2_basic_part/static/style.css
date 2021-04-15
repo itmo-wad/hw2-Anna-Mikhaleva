@@ -1,0 +1,28 @@
+body {
+  text-align:center;
+}
+.flex {
+  display: flex;
+  width: 900px;
+  /*padding: 0px 0px;*/
+  margin:auto;
+  flex-flow: row wrap;
+}
+.flex-pic{
+  margin: 10px;
+  width: 30%;
+  flex-grow: 1;
+}
+.pic {
+  max-width:100%;
+  max-height:100%;
+}
+.h1 {
+  display:inline-block;
+  padding:0 10px;
+  vertical-align:top;
+  color:#fff;
+  font-size:18px;
+  font-family:Trebuchet,Arial,sans-serif;
+  font-weight:bold;
+}
