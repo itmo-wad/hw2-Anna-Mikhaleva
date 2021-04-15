@@ -7,9 +7,9 @@ def index():
     return render_template('index.html')
 
 # Show static images on http://localhost:5000/images/<image_name>
-@app.route('/images/')
+@app.route('/images/<path:path>')
 def show_img(path):
-    return send_from_directory('images', path)
+    return send_from_directory('static\\images', path)
 
 # External CSS and JS files are returned on http://localhost:5000/static/<js/css filename>
 @app.route('/static/<path:filename>')
